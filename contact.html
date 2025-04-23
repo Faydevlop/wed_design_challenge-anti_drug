@@ -28,36 +28,68 @@
 </head>
 <body class="bg-white text-gray-800 scroll-smooth">
 
-    <header class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center" data-aos="zoom-out">
-            <!-- Logo -->
-            <div class="text-xl font-semibold">
-                <a href="#" class="text-2xl font-bold text-red-600">Swathanthra</a>
-                <p class="text-sm text-center font-medium text-gray-600">Kerala</p>
-            </div>
-    
-            <!-- Nav -->
-            <nav class="hidden md:flex space-x-6 text-sm font-medium items-center">
-                <a href="index.html" class="hover:text-blue-600 transition">Home</a>
-                <a href="about.html" class="hover:text-blue-600 transition">About</a>
-                <a href="blog.html" class="hover:text-blue-600 transition">Blog</a>
-                <a href="contact.html" class="hover:text-blue-600 transition">Contacts</a>
-            </nav>
-    
-            <!-- Icons -->
-            <div class="flex items-center space-x-4 text-xl">
-                <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="hover:text-blue-700"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="ml-4 hover:text-blue-600"><i class="fas fa-shopping-bag"></i></a>
-                <a href="#" class="hover:text-blue-600"><i class="far fa-user"></i></a>
-                <a href="tel:112" class="ml-6 px-4 py-2 bg-red-600 text-white text-sm rounded-md shadow hover:bg-red-700 flex items-center space-x-2">
-                    <i class="fas fa-phone-alt"></i>
-                    <span>Emergency: 112</span>
-                </a>
-            </div>
-        </div>
-    </header>
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center" data-aos="zoom-out">
+      
+      <!-- Left Side: Logo and Location -->
+      <div class="text-xl font-semibold">
+        <a href="#" class="text-2xl font-bold text-red-600">Swathanthra</a>
+        <p class="text-sm text-gray-600">Kerala</p>
+      </div>
+  
+      <!-- Navigation (Hidden on small) -->
+      <nav class="hidden md:flex space-x-6 text-sm font-medium items-center">
+        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+        <a href="about.html" class="hover:text-blue-600 transition">About</a>
+        <a href="blog.html" class="hover:text-blue-600 transition">Blog</a>
+        <a href="contact.html" class="hover:text-blue-600 transition">Contacts</a>
+      </nav>
+  
+      <!-- Right Side: Social Icons and Emergency Button (Hidden on small) -->
+      <div class="hidden md:flex items-center space-x-4 text-xl">
+        <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-700"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="ml-4 hover:text-blue-600"><i class="fas fa-shopping-bag"></i></a>
+        <a href="#" class="hover:text-blue-600"><i class="far fa-user"></i></a>
+        <a href="tel:112" class="ml-6 px-4 py-2 bg-red-600 text-white text-sm rounded-md shadow hover:bg-red-700 flex items-center space-x-2">
+          <i class="fas fa-phone-alt"></i>
+          <span>Emergency: 112</span>
+        </a>
+      </div>
+  
+      <!-- Burger Menu (Visible on small screens) -->
+      <button id="burger-btn" class="md:hidden p-2 bg-gray-400 rounded-md text-gray-700 hover:bg-gray-200 focus:outline-none transition-colors">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </header>
+  
+  <!-- Sidebar Navigation (Hidden by default) -->
+  <div id="mobile-sidebar" class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+    <div class="flex justify-between items-center p-4 border-b">
+      <span class="text-xl font-bold text-red-600">Swathanthra</span>
+      <button id="close-sidebar" class="p-2 text-gray-500 hover:text-gray-700 focus:outline-none">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+    </div>
+    <div class="p-6 space-y-6 text-sm font-medium">
+      <a href="index.html" class="block py-2 hover:text-blue-600 transition">Home</a>
+      <a href="about.html" class="block py-2 hover:text-blue-600 transition">About</a>
+      <a href="blog.html" class="block py-2 hover:text-blue-600 transition">Blog</a>
+      <a href="contact.html" class="block py-2 hover:text-blue-600 transition">Contacts</a>
+      <hr />
+      <div class="flex space-x-4 text-xl pt-4">
+        <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-700"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <a href="tel:112" class="mt-4 block px-4 py-2 bg-red-600 text-white text-sm rounded-md shadow hover:bg-red-700 text-center">
+        <i class="fas fa-phone-alt mr-2"></i>Emergency: 112
+      </a>
+    </div>
+  </div>
 
     <!-- main -->
     <div class="max-w-7xl mx-auto px-6 py-12">
@@ -232,6 +264,28 @@
     AOS.init({
       once: true,
       duration: 1000,
+    });
+  </script>
+  <script>
+    const burgerBtn = document.getElementById("burger-btn");
+    const closeSidebarBtn = document.getElementById("close-sidebar");
+    const mobileSidebar = document.getElementById("mobile-sidebar");
+  
+    burgerBtn.addEventListener("click", () => {
+      mobileSidebar.classList.toggle("-translate-x-full");
+    });
+  
+    closeSidebarBtn.addEventListener("click", () => {
+      mobileSidebar.classList.add("-translate-x-full");
+    });
+  
+    // Close sidebar when clicking outside
+    document.addEventListener("click", (event) => {
+      if (!mobileSidebar.contains(event.target) && 
+          !burgerBtn.contains(event.target) && 
+          !mobileSidebar.classList.contains("-translate-x-full")) {
+        mobileSidebar.classList.add("-translate-x-full");
+      }
     });
   </script>
 </body>
