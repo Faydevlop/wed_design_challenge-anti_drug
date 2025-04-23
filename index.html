@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Say No to Drugs</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a2e0e9f15d.js" crossorigin="anonymous"></script>
+
+  <!-- AOS Animate on Scroll CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 scroll-smooth">
+
+    <!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center" data-aos="zoom-out">
+
+    <!-- Left Side: Logo and Location -->
+    <div class="text-xl font-semibold">
+      <a href="#" class="text-2xl font-bold text-red-600">Swathanthra</a>
+      <p class="text-sm text-gray-600">Kerala</p>
+    </div>
+
+    <!-- Navigation (Hidden on small) -->
+    <nav class="hidden md:flex space-x-6 text-sm font-medium items-center">
+      <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+      <a href="about.html" class="hover:text-blue-600 transition">About</a>
+      <a href="blog.html" class="hover:text-blue-600 transition">Blog</a>
+      <a href="contact.html" class="hover:text-blue-600 transition">Contacts</a>
+    </nav>
+
+    <!-- Right Side: Social Icons and Emergency Button (Hidden on small) -->
+    <div class="hidden md:flex items-center space-x-4 text-xl">
+      <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-blue-700"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="ml-4 hover:text-blue-600"><i class="fas fa-shopping-bag"></i></a>
+      <a href="#" class="hover:text-blue-600"><i class="far fa-user"></i></a>
+      <a href="tel:112" class="ml-6 px-4 py-2 bg-red-600 text-white text-sm rounded-md shadow hover:bg-red-700 flex items-center space-x-2">
+        <i class="fas fa-phone-alt"></i>
+        <span>Emergency: 112</span>
+      </a>
+    </div>
+
+    <!-- Burger Menu (Visible on small screens) -->
+    <button id="burger-btn" class="md:hidden text-2xl text-gray-700 focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<!-- Sidebar Navigation (Visible on small) -->
+<div id="mobile-sidebar" class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg z-40 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+  <div class="p-6 space-y-6 text-sm font-medium">
+    <a href="index.html" class="block hover:text-blue-600">Home</a>
+    <a href="about.html" class="block hover:text-blue-600">About</a>
+    <a href="blog.html" class="block hover:text-blue-600">Blog</a>
+    <a href="contact.html" class="block hover:text-blue-600">Contacts</a>
+    <hr />
+    <div class="flex space-x-4 text-xl pt-4">
+      <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-blue-700"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="pt-6">
+      <a href="tel:112" class="block w-full px-4 py-2 bg-red-600 text-white text-center text-sm rounded-md shadow hover:bg-red-700">
+        <i class="fas fa-phone-alt mr-2"></i> Emergency: 112
+      </a>
+    </div>
+  </div>
+</div>
+
+    
+
+  <!-- 1st seciton -->
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-white to-white pt-20 pb-24 md:py-32" id="hero">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+      
+      <!-- Text -->
+      <div class="w-full md:w-1/2 text-center md:text-left" data-aos="fade-right">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-6">
+          Say No to Drugs,<br />
+          <span class="text-red-600">Yes to Life.</span>
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+          Join our mission to spread awareness and protect the future. Every choice matters — be the reason someone chooses life over addiction.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+          <a href="#campaign" class="px-6 py-3 bg-red-600 text-white font-semibold rounded-lg shadow hover:bg-red-700 transition duration-300">
+            Join the Movement
+          </a>
+          <a href="#learn-more" class="px-6 py-3 border border-red-600 text-red-600 font-semibold rounded-lg hover:bg-red-50 transition duration-300">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="w-full md:w-1/2" data-aos="fade-left">
+        <img 
+          src="https://i.pinimg.com/736x/7e/8f/da/7e8fda87625aa0ce295313b06f8d47fa.jpg" 
+          alt="Say No to Drugs" 
+          class="w-full max-w-md mx-auto rounded-xl "
+        />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 2nd seciton -->
+   <!-- Stats & Mission Section -->
+<section class="bg-white py-20" id="stats">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Stats -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-16 text-center" data-aos="fade-up">
+        <div>
+          <h3 class="text-4xl font-extrabold text-red-600">8500+</h3>
+          <p class="mt-2 text-gray-700 font-medium">Drug-Related Arrests<br><span class="text-sm text-gray-500">Over the past year</span></p>
+        </div>
+        <div>
+          <h3 class="text-4xl font-extrabold text-red-600">200+</h3>
+          <p class="mt-2 text-gray-700 font-medium">Awareness Programs<br><span class="text-sm text-gray-500">Conducted statewide</span></p>
+        </div>
+        <div>
+          <h3 class="text-4xl font-extrabold text-red-600">50+</h3>
+          <p class="mt-2 text-gray-700 font-medium">Rehabilitation Centers<br><span class="text-sm text-gray-500">Working with us</span></p>
+        </div>
+        <div>
+          <h3 class="text-4xl font-extrabold text-red-600">75%</h3>
+          <p class="mt-2 text-gray-700 font-medium">Reduction in Drug Cases<br><span class="text-sm text-gray-500">In target areas</span></p>
+        </div>
+      </div>
+  
+      <!-- Mission Statement -->
+      <div class="text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">Our Mission Against Drugs</h2>
+        <p class="text-lg text-gray-600 mb-6">
+          The Kerala Police Department is committed to combating drug abuse and trafficking throughout the state. Our comprehensive approach includes enforcement, prevention, education, and rehabilitation.
+        </p>
+        <p class="text-lg text-gray-600 mb-8">
+          We work closely with schools, communities, and healthcare providers to create awareness about the dangers of drug use and to provide support to those affected by addiction.
+        </p>
+        <a href="#initiative" class="inline-block px-6 py-3 bg-red-600 text-white font-semibold rounded-lg shadow hover:bg-red-700 transition duration-300">
+          Learn More About Our Initiative
+        </a>
+      </div>
+  
+      <!-- Photo Gallery -->
+      <div class="mt-20" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-bold text-gray-800 text-center mb-8">Snapshots from Our Initiatives</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <img src="https://images.pexels.com/photos/11626597/pexels-photo-11626597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Initiative 1" class="w-full h-64 object-cover rounded-xl shadow-md" />
+          <img src="https://media.gettyimages.com/id/74914704/photo/indonesian-youth-hold-anti-anti-drugs-posters-during-a-campaign-to-mark-the-united-nations.jpg?s=612x612&w=gi&k=20&c=VBdpLGGFqAH6XTCPA2I29n9NWTrjUzmGZ6HDFPVihM4=" alt="Initiative 2" class="w-full h-64 object-cover rounded-xl shadow-md" />
+          <img src="https://www.djjs.org/uploads/news/571ed64bc1509221250521.jpg" alt="Initiative 3" class="w-full h-64 object-cover rounded-xl shadow-md" />
+          <img src="https://www.djjs.org/uploads/news/571ed64bc1509221250521.jpg" alt="Initiative 4" class="w-full h-64 object-cover rounded-xl shadow-md" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmagkcxprpElV4w3uVPbetMg39BKBmBkXXC9GSYnBxmEoBeasuREIJF-bggQKaeNXYR10&usqp=CAU" alt="Initiative 5" class="w-full h-64 object-cover rounded-xl shadow-md" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNaeErcNjCM0uUxtP6xlrU8COOMi2r-b49ynwuC4_DMYtrXVEzTL5MfCQeosh_JIHAjzQ&usqp=CAU" alt="Initiative 6" class="w-full h-64 object-cover rounded-xl shadow-md" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3rd section -->
+  <!-- How Can We Help Section -->
+<section class="bg-gray-50 py-20" id="help">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6" data-aos="fade-up">How Can We Help?</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="100">
+        Whether you're someone seeking help, a concerned family member, or a community member looking to make a difference — we're here for you. Our resources and support systems are designed to guide you every step of the way.
+      </p>
+  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+        <!-- Help Card 1 -->
+        <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition">
+          <div class="w-16 h-16 mx-auto mb-4">
+            <img src="/assets/icons/communication.png" alt="Counselor Icon" class="w-full h-full object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Talk to a Counselor</h3>
+          <p class="text-gray-600 mb-4">Connect with professional counselors who can offer emotional support and guidance without judgment.</p>
+          <a href="#counseling" class="text-red-600 font-semibold hover:underline">Get Support →</a>
+        </div>
+  
+        <!-- Help Card 2 -->
+        <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition">
+          <div class="w-16 h-16 mx-auto mb-4">
+            <img src="/assets/icons/rehabilitation.png" alt="Rehabilitation Icon" class="w-full h-full object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Find Rehab Centers</h3>
+          <p class="text-gray-600 mb-4">We collaborate with certified rehabilitation centers across the state. Locate one near you.</p>
+          <a href="#rehab" class="text-red-600 font-semibold hover:underline">Search Centers →</a>
+        </div>
+  
+        <!-- Help Card 3 -->
+        <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition">
+          <div class="w-16 h-16 mx-auto mb-4">
+            <img src="/assets/icons/warning.png" alt="Report Icon" class="w-full h-full object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Report Drug Activity</h3>
+          <p class="text-gray-600 mb-4">Help us keep your community safe. Report suspicious activity anonymously and securely.</p>
+          <a href="#report" class="text-red-600 font-semibold hover:underline">Make a Report →</a>
+        </div>
+      </div>
+  
+      <div class="mt-16" data-aos="fade-up" data-aos-delay="300">
+        <a href="#resources" class="inline-block px-8 py-3 bg-red-600 text-white font-semibold rounded-lg shadow hover:bg-red-700 transition duration-300">
+          Explore All Support Resources
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4th section -->
+   <!-- Real Stories Section -->
+<section class="bg-white py-20 border-t border-gray-200" id="stories">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 text-center mb-6" data-aos="fade-up">Real Stories. Real Impact.</h2>
+      <p class="text-lg text-gray-600 max-w-2xl text-center mx-auto mb-12" data-aos="fade-up" data-aos-delay="100">
+        Hear from individuals whose lives were transformed with our help. These stories reflect courage, hope, and the power of support.
+      </p>
+  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10" data-aos="fade-up" data-aos-delay="200">
+        <!-- Story 1 -->
+        <div class="bg-gray-50 rounded-xl p-6 shadow hover:shadow-lg transition duration-300">
+          <img src="https://www.amity.edu/gurugram/microbackoffice/Uploads/TestimonialImage/98testi_RajivBasavaalumni.jpg" alt="Testimonial 1" class="w-16 h-16 rounded-full mx-auto mb-4 object-cover" />
+          <p class="text-gray-700 italic mb-4">"I was lost and broken, but the support I received here gave me a second chance. I’m now helping others like me."</p>
+          <h4 class="text-red-600 font-semibold text-center">Arun, Kozhikode</h4>
+        </div>
+  
+        <!-- Story 2 -->
+        <div class="bg-gray-50 rounded-xl p-6 shadow hover:shadow-lg transition duration-300">
+          <img src="https://www.fujitsu.com/hk/Images/Srinita_1_tcm137-3656043.jpg" alt="Testimonial 2" class="w-16 h-16 rounded-full mx-auto mb-4 object-cover" />
+          <p class="text-gray-700 italic mb-4">"The awareness program at my school opened my eyes. I now volunteer to spread the word in my community."</p>
+          <h4 class="text-red-600 font-semibold text-center">Neha, Thrissur</h4>
+        </div>
+  
+        <!-- Story 3 -->
+        <div class="bg-gray-50 rounded-xl p-6 shadow hover:shadow-lg transition duration-300">
+          <img src="https://testingserver.grandamanta.com/wp-content/uploads/2022/06/4.jpg" alt="Testimonial 3" class="w-16 h-16 rounded-full mx-auto mb-4 object-cover" />
+          <p class="text-gray-700 italic mb-4">"Reporting drug activity helped save lives in my neighborhood. I'm proud to have taken action."</p>
+          <h4 class="text-red-600 font-semibold text-center">Rahul, Ernakulam</h4>
+        </div>
+      </div>
+  
+      <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="300">
+        <a href="#share-story" class="inline-block px-8 py-3 bg-red-600 text-white font-semibold rounded-lg shadow hover:bg-red-700 transition">
+          Share Your Story
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+   <!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-16" id="footer">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+  
+      <!-- CTA Section -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-red-500">Join Our Fight Against Drugs</h3>
+        <p class="text-gray-300 mb-6">
+          Together, we can make Kerala drug-free. Report suspicious activities, spread awareness, and support those affected by addiction.
+        </p>
+        <div class="flex flex-col gap-3">
+          <a href="#report" class="inline-block w-fit bg-red-600 hover:bg-red-700 transition px-5 py-2 rounded-md font-medium">Report Drug Activity</a>
+          <a href="#tips" class="inline-block w-fit bg-white text-red-600 hover:text-white hover:bg-red-700 transition px-5 py-2 rounded-md font-medium">Read Prevention Tips</a>
+        </div>
+      </div>
+  
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-xl font-semibold mb-4 text-red-500">Quick Links</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="#home" class="hover:text-white">Home</a></li>
+          <li><a href="#about" class="hover:text-white">About Campaign</a></li>
+          <li><a href="#blog" class="hover:text-white">Blog & News</a></li>
+          <li><a href="#contact" class="hover:text-white">Contact Us</a></li>
+          <li><a href="#resources" class="hover:text-white">Resources</a></li>
+          <li><a href="#awareness" class="hover:text-white">Drug Awareness</a></li>
+          <li><a href="#rehab" class="hover:text-white">Rehabilitation Centers</a></li>
+          <li><a href="#prevention" class="hover:text-white">Prevention Programs</a></li>
+          <li><a href="#complaint" class="hover:text-white">File a Complaint</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Info -->
+      <div>
+        <h4 class="text-xl font-semibold mb-4 text-red-500">Contact Us</h4>
+        <p class="text-gray-300 mb-3">Police Headquarters,<br>Thiruvananthapuram, Kerala - 695010</p>
+        <p class="text-gray-300 mb-1">Phone: <a href="tel:+914712721547" class="hover:text-white">+91 471 2721547</a></p>
+        <p class="text-gray-300">Email: <a href="mailto:info@keralapolice.gov.in" class="hover:text-white">info@keralapolice.gov.in</a></p>
+      </div>
+    </div>
+  
+    <!-- Bottom note -->
+    <div class="text-center text-gray-500 text-sm mt-12 border-t border-gray-700 pt-6">
+      © 2025 Kerala Police Department — All rights reserved. | Say No To Drugs
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  </script>
+</body>
+</html>
